@@ -1,6 +1,8 @@
 import React from "react"
 import Intro from "../components/intro/index"
 import Projects from "../components/projects/index"
+import CV from "../components/cv/index"
+import Contact from "../components/footer/index"
 import Nav from "../components/nav"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,6 +14,8 @@ const IndexPage = () => (
     <Nav />
     <Intro />
     <Projects />
+    <CV />
+    <Contact />
   </Layout>
 )
 
