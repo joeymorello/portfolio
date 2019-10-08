@@ -1,7 +1,17 @@
 body {
-  background-color: thistle;
+  background-color: #eee;
   margin: 0 auto;
   padding: 0 10%;
   max-width: 1200px;
-  border: 1em solid #e6bdff;
+  border: 1em solid #B32B48;
 }
+
+section {
+  height: 100vh;
+}
+
+/* h2 {
+  font-family: Helvetica; 
+  text-transform: uppercase;
+  color: #B32B48;
+} */

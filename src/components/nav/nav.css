@@ -19,6 +19,10 @@ nav {
 
 .nav__item--logo {
     height: 40px;
+    transition: all 0.25s ease-in-out;
+}
+.nav__item--logo:hover {
+    transform: rotate(90deg);
 }
 
 .nav__item--link {

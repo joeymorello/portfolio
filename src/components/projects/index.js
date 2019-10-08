@@ -47,7 +47,7 @@ export default () => (
                         rgba(10,10,10,0.7) 100%),
                         url(${edge.node.featuredImage.fluid.src})`
                     }}
-                onClick={() => navigate(`/blog/${edge.node.slug}`)} >
+                onClick={() => navigate(`/project/${edge.node.slug}`)} >
                 {edge.node.category.map(categories => (
                     <p className='card__category'>{categories.category}</p>
                 ))}
