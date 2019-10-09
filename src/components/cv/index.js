@@ -24,7 +24,7 @@ export default () => (
   }
 `}
      render={data => (
-       <section id="contact">
+       <section id="cv">
          {data.allContentfulCvSection.edges.map(edge => (
              <div key={edge.node.id} className='header__section'>           
                    <h1 className='header__title'>{edge.node.title}</h1>

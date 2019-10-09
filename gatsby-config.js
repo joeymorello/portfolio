@@ -22,7 +22,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `oswald\:400,700`,
+          `fjalla one\:400`,
+          `roboto mono\:300,400`,
+          `muli\:300,700`
         ]
       },
     },

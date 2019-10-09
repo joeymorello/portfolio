@@ -4,6 +4,7 @@ import Projects from "../components/projects/index"
 import CV from "../components/cv/index"
 import Contact from "../components/footer/index"
 import Nav from "../components/nav"
+import Accounts from "../components/accounts"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,6 +12,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Accounts />
     <Nav />
     <Intro />
     <Projects />

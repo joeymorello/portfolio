@@ -1,17 +1,29 @@
 body {
-  background-color: #eee;
+  /* background-color: #eee; */
   margin: 0 auto;
-  padding: 0 10%;
-  max-width: 1200px;
-  border: 1em solid #B32B48;
+  /* padding: 0 10%;
+  max-width: 1200px; */
+  border-top: 0.3em solid #B32B48;
+
+  /* animation: bg-ani 15s infinite;
+  animation-timing-function: ease; */
 }
+/* @keyframes bg-ani {
+  0% {background-color: hsl(0, 100%, 95%)}
+  50%{background-color: hsl(60, 100%, 95%)}
+  100% {background-color: hsl(180, 100%, 95%)}
+}  */
 
 section {
   height: 100vh;
+  margin: 0 auto;
+  padding: 0 10%;
+  max-width: 1200px; 
 }
 
-/* h2 {
-  font-family: Helvetica; 
-  text-transform: uppercase;
-  color: #B32B48;
-} */
+footer {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 10%;
+  max-width: 1200px; 
+}

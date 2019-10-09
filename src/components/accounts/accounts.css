@@ -1,0 +1,30 @@
+.accounts-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    height: auto; 
+    width: auto; 
+    position: absolute; 
+    z-index: 1; 
+    /* top: 28vh;  */
+    left: 1em;
+    overflow: hidden; 
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+li a {
+    display: block;
+    color: var(--primary-color);
+    padding: 2.5em 0;
+    text-decoration: none;
+    transform: rotate(-90deg);
+    transition: all 0.25s ease-in-out;
+    font-family: var(--secondary-text);
+    font-weight: 400;
+}
+ li a:hover {
+    transform: rotate(0deg);
+ }
