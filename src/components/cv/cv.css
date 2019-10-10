@@ -1,5 +1,5 @@
 #cv {
-  padding-top: 3em;
+  /* padding-top: 3em; */
 }
 
 .cv__wrapper {
@@ -27,7 +27,7 @@
 }
 
 .resume__download {
-  margin-top: 5em;
+  margin: 5em 0;
   text-align: center;
   font-size: var(--font-title--small);
   font-family: var(--primary-text);

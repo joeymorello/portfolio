@@ -43,18 +43,8 @@ section {
   height: auto;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 3em;
   /* padding-top: 3em; */
 
   /* background-color: red; */
-}
-
-footer {
-  height: 50vh;
-  margin: 0 auto;
-  padding: 0 10%;
-  max-width: 1200px; 
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

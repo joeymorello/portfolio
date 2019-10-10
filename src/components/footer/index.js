@@ -20,9 +20,13 @@ export default () => (
      render={data => (
        <footer id="contact">
          {data.allContentfulContactSection.edges.map(edge => (
-             <div key={edge.node.id} className='header__section'>           
-                   <h1 className='header__title'>{edge.node.title}</h1>
-                   <a href="mailto:joeymorello.one@gmail.com">{edge.node.emailLink}</a>
+             <div key={edge.node.id}>
+             <h1 className='header__title'>{edge.node.title}</h1>
+              <div className="contact__container">  
+                  <div className="email">        
+                    <a href="mailto:joeymorello.one@gmail.com">{edge.node.emailLink}</a>
+                  </div>
+              </div>
              </div>
          ))}
        </footer>
