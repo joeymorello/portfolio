@@ -34,8 +34,10 @@ export default () => (
                           {__html: `${edge.node.cvContent.childMarkdownRemark.html}`}
                         } />
                       </div>
-                      <a href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank">{edge.node.download}</a>
                    </div>
+                  <div className="resume__download">
+                    <a href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank">{edge.node.download}</a>
+                  </div>
              </div>
          ))}
        </section>

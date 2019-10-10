@@ -13,6 +13,7 @@
     text-align: center;
     height: auto;
     width: auto;
+    line-height: 2.125em;
 }
 
 .intro-scroll {
@@ -49,7 +50,7 @@
 .intro__name {
     margin: 0;
     font-size: var(--font-title--large);
-    line-height: 0.75;
+    line-height: 1;
     font-family: var(--primary-text); 
     text-transform: uppercase;
     color: var(--primary-color);

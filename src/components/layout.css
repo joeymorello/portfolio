@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--rotation-color-primary);
   width: 100%;
@@ -40,7 +49,7 @@ section {
 }
 
 footer {
-  height: 100vh;
+  height: 50vh;
   margin: 0 auto;
   padding: 0 10%;
   max-width: 1200px; 
