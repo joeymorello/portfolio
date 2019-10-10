@@ -18,6 +18,7 @@ export default () => (
          id
          slug
          title
+         seoKeywords
          category {
              title
              id
@@ -38,21 +39,16 @@ export default () => (
          <h1 className='header__title'>Projects</h1>
             <div className='feed'>
                 {data.allContentfulProject.edges.map(edge => (
-                    <div key={edge.node.id} className='card'
-                    style={{
-                        backgroundImage: `linear-gradient(
-                        to bottom, 
-                        rgba(10,10,10,0) 0%,
-                        rgba(10,10,10,0) 50%,
-                        rgba(10,10,10,0.7) 100%),
-                        url(${edge.node.featuredImage.fluid.src})`
-                    }}
-                onClick={() => navigate(`/project/${edge.node.slug}`)} >
-                {edge.node.category.map(categories => (
-                    <p className='card__category'>{categories.category}</p>
-                ))}
-                <p className='card__title'>{edge.node.title}</p>
-                </div>
+                <div key={edge.node.id} className='project__item' onClick={() => navigate(`/project/${edge.node.slug}`)} >
+       
+                  <h2 className='project__title'>{edge.node.title}</h2>
+                  <div className='side__scroll'>
+                    <p className='project__keywords'>{edge.node.seoKeywords}</p>
+                  </div>
+                        {/* {edge.node.categories.map(category => (
+                            <p className='card__category'>{category.title}</p>
+                        ))} */}
+              </div>
                 ))}
             </div>
         </section>

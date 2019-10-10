@@ -2,12 +2,17 @@
     --intro-scroll-size: 2em;
 }
 
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header__content {
-    margin: auto 0;
     text-align: center;
-    margin-top: 55vh;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    height: auto;
+    width: auto;
 }
 
 .intro-scroll {
@@ -41,21 +46,22 @@
 }
 
 
-h1 {
-    font-size: 6em;
-    line-height: 0.125;
+.intro__name {
+    margin: 0;
+    font-size: var(--font-title--large);
+    line-height: 0.75;
     font-family: var(--primary-text); 
     text-transform: uppercase;
     color: var(--primary-color);
-  }
+  } 
 
-h2 {
+.intro__description {
     font-family: var(--secondary-text); 
     color: var(--primary-color);
     font-weight: 400;
 }
 
-h3 {
+.intro__location {
     font-family: var(--secondary-text); 
     color: var(--primary-color);
     font-weight: 400;

@@ -24,9 +24,9 @@ export default () => (
        <section id="intro">
          {data.allContentfulIntroSection.edges.map(edge => (
              <div key={edge.node.id} className='header__content'>
-                   <h1 className="title-delete">{edge.node.name}</h1>
-                   <h2>{edge.node.description}</h2>
-                   <h3>{edge.node.location}</h3>
+                   <h1 className="intro__name">{edge.node.name}</h1>
+                   <h2 className="intro__description">{edge.node.description}</h2>
+                   <h3 className="intro__location">{edge.node.location}</h3>
                    {/* <h2>{edge.node.focus}</h2> */}
                     <a href="#projects">
                       <div className="intro-scroll">

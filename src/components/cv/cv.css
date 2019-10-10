@@ -1,3 +1,33 @@
+#cv {
+  padding-top: 3em;
+}
+
+.cv__content {
+  margin-left: 12em;
+}
+
+.cv__content--section {
+  margin: 0;
+  padding: 1em 0;
+  font-size: var(--font-title--small);
+  font-family: var(--primary-text); 
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+
+
+
+/* WORK SECTION */
+.work__item {
+  margin-left: 1em;
+}
+
+
+
+
+
+/* SKILLS SECTION  */
 .skills-wrapper {
     margin: 15px;
   }

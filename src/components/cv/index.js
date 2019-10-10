@@ -26,14 +26,16 @@ export default () => (
      render={data => (
        <section id="cv">
          {data.allContentfulCvSection.edges.map(edge => (
-             <div key={edge.node.id} className='header__section'>           
+             <div key={edge.node.id} className='cv__section'>           
                    <h1 className='header__title'>{edge.node.title}</h1>
-                   <div className='project__content'>
-                   <div dangerouslySetInnerHTML={
-                      {__html: `${edge.node.cvContent.childMarkdownRemark.html}`}
-                    } />
+                   <div className='cv__wrapper'>
+                    <div className='cv__content'>
+                      <div dangerouslySetInnerHTML={
+                          {__html: `${edge.node.cvContent.childMarkdownRemark.html}`}
+                        } />
+                      </div>
+                      <a href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank">{edge.node.download}</a>
                    </div>
-                   <a href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank">{edge.node.download}</a>
              </div>
          ))}
        </section>

@@ -1,7 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto+Mono:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
 
 :root {
+    /* COLOR */
     --primary-color: #B32B48;
+    /* --primary-color: #7a6161; */
+
+
+
+
+    /* TYPOGRAPHY */
+        /* COLOR */
     --primary-text: 'DM Serif Display', serif;
     --secondary-text: 'Roboto Mono', monospace;
+        /* SIZE */
+    --font-title--large: 6em;
+    --font-title--medium: 3em;
+    --font-title--small: 1.5em;
+
+
+
+
+    /* ANIMATION */
+    --color-rotation: color-rotation 30s infinite ease;
+    --color-rotation--dark: color-rotation--dark 30s infinite ease;
+
+        /* COLORS */
+    --rotation-color-primary: hsl(50, 100%, 50%);
+    --rotation-color-secondary: hsl(180, 100%, 50%);
+
+    --rotation-color-primary--dark: hsl(50, 100%, 45%);
+    --rotation-color-secondary--dark: hsl(180, 100%, 45%); 
+
+
+
+    /* EASING */
+    --smooth-snap: cubic-bezier(.75,0,.175,1);
 }

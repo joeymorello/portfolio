@@ -21,7 +21,8 @@ li a {
     padding: 2.5em 0;
     text-decoration: none;
     transform: rotate(-90deg);
-    transition: all 0.25s ease-in-out;
+    /* transition: all 0.25s ease-in-out; */
+    transition: .5s var(--smooth-snap); 
     font-family: var(--secondary-text);
     font-weight: 400;
 }
