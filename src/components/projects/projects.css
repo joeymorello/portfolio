@@ -19,12 +19,11 @@
 }
 
 .card__category {
-    font-family: Muli,sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
+    /* font-style: italic; */
+    font-size: var(--font-content--tiny);
+    color: var(--primary-color);
+    text-transform: lowercase;
+    opacity: 0.5;
 }
 
 .project__title {
@@ -46,6 +45,9 @@
     font-family: var(--secondary-text); 
     text-transform: lowercase;
     color: var(--primary-color);
+    font-size: var(--font-content--medium);
+
+    opacity: 0.5;
 }
 
 /* =====================

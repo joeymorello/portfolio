@@ -8,6 +8,11 @@ import Accounts from "../components/accounts"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//==========================================================================================
+//
+//CHANGE CONTACT TO A SECTION AND ADD FOOTER COMPONENT TO RENDER TO EVERYPAGE - ADD COPYRIGHT
+//
+//==========================================================================================
 
 const IndexPage = () => (
   <Layout>

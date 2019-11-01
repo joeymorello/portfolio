@@ -15,7 +15,7 @@
     transform: translateY(-50%);
 }
 
-li a {
+.accounts-list li a {
     display: block;
     color: var(--primary-color);
     padding: 2.5em 0;
@@ -24,8 +24,8 @@ li a {
     /* transition: all 0.25s ease-in-out; */
     transition: .5s var(--smooth-snap); 
     font-family: var(--secondary-text);
-    font-weight: 400;
+    /* font-weight: 400; */
 }
- li a:hover {
+.accounts-list li a:hover {
     transform: rotate(0deg);
  }

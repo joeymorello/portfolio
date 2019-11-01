@@ -26,6 +26,37 @@ const Nav = () => (
 } 
 
 // PROJECTS
+
+query ProjectsQuery {
+    allContentfulProject(
+        sort: { fields: [createdAt], order: DESC }
+        filter: {
+        node_locale: {eq: "en-US",}
+        showProject: {eq: true}
+      }
+      ) {
+      edges {
+        node {
+          id
+          slug
+          title
+          seoKeywords
+          projectType
+          category {
+              title
+              id
+          }
+          featuredImage {
+            fluid(maxWidth: 1200, quality: 85) {
+              src
+              ...GatsbyContentfulFluid
+            }
+          }
+        }
+      }
+    }
+  }
+  
 render={data => (
     <section id="projects">
     <h1 className='header__title'>Projects</h1>
