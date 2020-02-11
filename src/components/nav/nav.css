@@ -8,6 +8,10 @@
     overflow-x: hidden; 
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    /* color: hsl(297, 6%, 20%);
+    text-shadow: -2px -1.5px 3px hsl(297, 6%, 28%), 2px 2px 3px hsl(297, 6%, 15%);
+    font-weight: 900; */
 } 
 
 
