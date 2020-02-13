@@ -3,6 +3,7 @@ import { graphql, navigate, StaticQuery } from 'gatsby'
 import './projects.css'
 
 export default () => (
+
    <StaticQuery
      query={graphql` 
  query ProjectsQuery {
@@ -19,6 +20,7 @@ export default () => (
          slug
          title
          seoKeywords
+         projectKeywords
          projectType
          featuredImage {
            fluid(maxWidth: 1200, quality: 85) {
@@ -45,9 +47,9 @@ export default () => (
                 <div data={'web'} key={edge.node.id} className='project__item' onClick={() => navigate(`/project/${edge.node.slug}`)} >
        
                   <p className='card__category'>{edge.node.projectType}</p>
-                  <h2 className='project__title'>{edge.node.title}</h2>
+                  <h2 className='projects__title'>{edge.node.title}</h2>
                   <div className='side__scroll'>
-                    <p className='project__keywords'>{edge.node.seoKeywords}</p>
+                    <p className='project__keywords'>{edge.node.projectKeywords}</p>
                   </div>
                   
                     {/* {edge.node.category.map(title => (

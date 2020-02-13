@@ -28,7 +28,8 @@
 
 .project__wrapper {
     width: 100vw;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: whitesmoke;
     color: var(--rotation-color-primary);
     left: 50%;
     right: 50%;

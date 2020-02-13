@@ -33,13 +33,15 @@ body {
 } 
   
 .title__container {
-  background-color: pink;
-  width: 40px;
+  /* background-color: pink; */
+  /* width: 40px; */
   
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
     /* margin: 0 15px; */
-    margin-left: 4em;
+    /* margin-left: 4em; */
+
+
 }
 
 .header__title {
@@ -56,15 +58,27 @@ body {
   /* writing-mode: vertical-rl;
   text-orientation: sideways; */
 
+  overflow: hidden;
+  overflow-wrap: break-word;
+
   margin: 0;
   padding: 0;
 
-  /* position: relative;
-  top: 50vh;
-  left: 0; */
+  position: relative;
+  top: 0;
+  left: 0;
+
+  /* width: 500px; */
+
+  z-index: -1;
 
   /* color: hsl(297, 6%, 20%); */
   /* text-shadow: -2px -1.5px 4px hsl(297, 6%, 28%), 2px 2px 4px hsl(297, 6%, 15%); */
+}
+
+.vert__title {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
 }
 
 

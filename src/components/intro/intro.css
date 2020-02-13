@@ -13,7 +13,7 @@
     text-align: center;
     height: auto;
     width: auto;
-    line-height: 2.125em;
+    line-height: 2.5em;
     text-shadow: 2px 2px 4px var(--rotation-color-primary--dark);
 }
 
@@ -32,8 +32,8 @@
     content: '';
     display: inline-flex;
     height: 0;
-    margin: .25em;
-    width: 4px;
+    margin: 1em .25em;
+    width: .25em;
     animation: intro-scroll-anim 3s infinite var(--smooth-snap);
 }
 
@@ -72,14 +72,38 @@
 @media screen and (max-width: 850px) { 
     .intro__name {
         font-size: var(--font-title--medium);
-        line-height: 1;
+        line-height: 1.5;
       } 
     
     .intro__description {
+        font-size: var(--font-content--large);
         font-family: var(--secondary-text); 
     }
     
     .intro__location {
+        font-size: var(--font-content--small);
         font-family: var(--secondary-text); 
+    }
+
+
+    .intro-scroll i {
+        background-color: var(--primary-color);
+        border-radius: 0 0 5px 5px;
+        content: '';
+        display: inline-flex;
+        height: 0;
+        margin: 1em .25em;
+        width: .125em;
+        animation: intro-scroll-anim 3s infinite var(--smooth-snap);
+    }
+    
+    .intro-scroll i:nth-child(1) {animation-delay: 0.17s}
+    .intro-scroll i:nth-child(2) {animation-delay: 0}
+    .intro-scroll i:nth-child(3) {animation-delay: 0.28s}
+    
+    @keyframes intro-scroll-anim {
+        0% {height: 0em;}
+        50% {height: 1.25em;}
+        100% {height: 0em;}  
     }
 }

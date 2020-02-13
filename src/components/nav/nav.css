@@ -9,10 +9,26 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+    font-weight: var(--font-weight--light);
+    font-size: var(--font-content--small);
+
     /* color: hsl(297, 6%, 20%);
     text-shadow: -2px -1.5px 3px hsl(297, 6%, 28%), 2px 2px 3px hsl(297, 6%, 15%);
     font-weight: 900; */
 } 
+
+/* .nav__items hr {
+  border: none;
+  border-left: 1px solid var(--rotation-color-primary--dark);
+  height: 100vh;
+  width: 1px; 
+  margin-left: .45em;
+  
+} */
+
+/* .hr__bottom {
+  height: 20vh !important;
+} */
 
 
 /* .nav__item--left {
@@ -32,8 +48,7 @@
     display: block;
     font-family: var(--secondary-text);
     text-decoration: none;
-    padding: 1em 0;
-    /* transition: all 0.3s ease-in-out; */
+    padding: 2em 0;
     transition: 0.5s var(--smooth-snap); 
     visibility: hidden;
 }
@@ -41,6 +56,8 @@
 span {
     margin-right: 1em;
     visibility: visible;
+    font-weight: var(--font-weight--medium);
+    font-size: var(--font-content--large);
 }
 
 .nav__item--link:hover {
@@ -53,7 +70,45 @@ span {
     color: var(--primary-color);
 }
 
+@media screen and (max-width: 1000px) {
+  .nav__items {
+    height: auto; 
+    width: auto; 
+    position: fixed; 
+    z-index: 1; 
+    top: 5%;
 
+    left: 0;
+    right: 10%;
+    text-align: center;
+    overflow-x: hidden; 
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    font-weight: var(--font-weight--light);
+    font-size: var(--font-content--small);
+  }
+
+  .nav__item--link {
+    color: var(--primary-color);
+    display: inline-block;
+    font-family: var(--secondary-text);
+    text-decoration: none;
+    padding: 1em 0; 
+    visibility: visible;
+    font-weight: var(--font-weight--light);
+  }
+
+  span {
+    margin-right: 0;
+    visibility: hidden;
+  }
+
+  .nav__item--link:hover {
+    color: var(--primary-color);
+    transform: translateX(0);
+  }
+}
 
 
 /* MOBILE NAV */
@@ -63,7 +118,7 @@ span {
     background-color: #333;
   }
   
-  .topnav a {
+  /* .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -71,7 +126,7 @@ span {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+  } */
   
   .topnav a:hover {
     background-color: #ddd;

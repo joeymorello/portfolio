@@ -29,6 +29,10 @@ font-family: 'Anonymous Pro', monospace; */
     --font-content--small: 1em;
     --font-content--tiny: 0.75em;
 
+        /* WEIGHT */
+    --font-weight--light: 500;
+    --font-weight--medium: 600;
+
 
 
 
