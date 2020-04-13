@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Nav from '../components/nav';
+import ProjectFooter from '../components/projectFooter';
 import SEO from '../components/seo';
 import './project.css';
 
@@ -9,7 +10,7 @@ const ProjectTemplate = (props) => {
     return (
         <Layout>
         <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
-        <Nav />
+        <ProjectFooter />
         <div className='project__header'>
             <div className='project__hero' style={{backgroundImage:  `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div>
             <div className='project__info'>

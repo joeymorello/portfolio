@@ -3,11 +3,17 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* margin: 2em; */
+}
+
+.cv__wrapper:hover {
+  transform: skew(0deg);
 }
 
 .cv__content {
   display: flex;
   align-items: center;  
+  margin: 2em;
 }
 
 .cv__content--section {
@@ -151,7 +157,7 @@
     padding-right: 2em;
   }
 
-  ul {
+  .skills-wrapper, ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -161,4 +167,14 @@
     font-size: var(--font-content--large);
     font-weight: bold;
     margin-bottom: 0.75em;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
   }

@@ -1,0 +1,20 @@
+.project-footer {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 97%;
+  height: 4em;
+
+  .previous {
+    float: left;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+  .next {
+    float: right;
+  }
+}

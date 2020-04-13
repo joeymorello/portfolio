@@ -1,57 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto+Mono:300,400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|IBM+Plex+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto+Mono:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|IBM+Plex+Mono&display=swap");
 
 /* font-family: 'IBM Plex Mono', monospace;
 font-family: 'Cutive Mono', monospace;
 font-family: 'Anonymous Pro', monospace; */
 
 :root {
-    /* COLOR */
-    /* --primary-color: #B32B48; */
-    /* --primary-color: #7a6161; */
-    --primary-color: #a38ca1;
+  /* COLOR */
+  /* --primary-color: #B32B48; */
+  /* --primary-color: #7a6161; */
+  /* --primary-color: #a38ca1; purp */
+  --primary-color: hsl(0, 0%, 31%);
 
+  /* TYPOGRAPHY */
+  /* COLOR */
+  --primary-text: "DM Serif Display", serif;
+  /* --secondary-text: 'Roboto Mono', monospace; */
+  --secondary-text: "Anonymous Pro", monospace;
 
-
-
-    /* TYPOGRAPHY */
-        /* COLOR */
-    --primary-text: 'DM Serif Display', serif;
-    /* --secondary-text: 'Roboto Mono', monospace; */
-    --secondary-text: 'Anonymous Pro', monospace;
-
-        /* SIZE */
-    --font-title--large: 6em;
+  /* SIZE */
+  --font-title--huge: 12em;
+  /* --font-title--large: 6em;
     --font-title--medium: 3em;
     --font-title--small: 1.5em;
 
     --font-content--large: 1.25em;
     --font-content--small: 1em;
-    --font-content--tiny: 0.75em;
+    --font-content--tiny: 0.75em; */
+  --font-title--large: 6em;
+  --font-title--medium: 4em;
+  --font-title--small: 1.5em;
 
-        /* WEIGHT */
-    --font-weight--light: 500;
-    --font-weight--medium: 600;
+  --font-content--large: 1.25em;
+  --font-content--small: 1em;
+  --font-content--tiny: 0.75em;
 
+  --mobile-content--large: 1.25;
 
+  /* WEIGHT */
+  --font-weight--light: 500;
+  --font-weight--medium: 600;
 
+  /* ANIMATION */
+  --color-rotation: color-rotation 30s infinite ease;
+  --color-rotation--dark: color-rotation--dark 30s infinite ease;
 
-    /* ANIMATION */
-    --color-rotation: color-rotation 30s infinite ease;
-    --color-rotation--dark: color-rotation--dark 30s infinite ease;
+  /* COLORS */
+  /* --rotation-color-primary: hsl(50, 100%, 50%); */
+  --rotation-color-secondary: hsl(180, 100%, 50%);
 
-        /* COLORS */
-    /* --rotation-color-primary: hsl(50, 100%, 50%); */
-    --rotation-color-secondary: hsl(180, 100%, 50%);
+  /* --rotation-color-primary--dark: hsl(50, 100%, 45%); */
+  --rotation-color-secondary--dark: hsl(180, 100%, 45%);
 
-    /* --rotation-color-primary--dark: hsl(50, 100%, 45%); */
-    --rotation-color-secondary--dark: hsl(180, 100%, 45%); 
+  /* --rotation-color-primary: hsl(297, 6%, 20%);
+  --rotation-color-primary--dark: hsl(297, 6%, 17%); */
 
-    --rotation-color-primary: hsl(297, 6%, 20%);
-    --rotation-color-primary--dark: hsl(297, 6%, 17%);
+  --rotation-color-primary: hsl(0, 0%, 61%);
+  --rotation-color-primary--dark: hsl(0, 0%, 56%);
 
-
-
-    /* EASING */
-    --smooth-snap: cubic-bezier(.75,0,.175,1);
+  /* EASING */
+  --smooth-snap: cubic-bezier(0.75, 0, 0.175, 1);
 }
