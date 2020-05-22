@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, navigate, StaticQuery } from 'gatsby'
-import './contact.css'
+import './contact.scss'
 
 export default () => (
    <StaticQuery

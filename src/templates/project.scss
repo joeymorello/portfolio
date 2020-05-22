@@ -4,6 +4,7 @@
   width: 100%;
 
   .project__title {
+    line-height: 0.75em;
     font-family: var(--primary-text);
     font-size: var(--font-title--ex-large);
     color: var(--primary-color);
@@ -57,25 +58,11 @@
   }
 
   @media screen and (max-width: 1000px) {
-    .project__title {
-      font-size: var(--font-title--medium);
-    }
   }
 
   @media screen and (max-width: 800px) {
-    .project__desc {
-      width: 50%;
-      margin-left: 35%;
-
-      p {
-        font-size: var(--font-content--large);
-      }
-    }
-  }
-
-  @media screen and (max-width: 500px) {
     .project__title {
-      font-size: 2.5em;
+      font-size: var(--font-title--medium);
     }
 
     .project__desc {
@@ -84,6 +71,22 @@
 
       p {
         font-size: var(--font-content--small);
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .project__title {
+      font-size: 3em;
+    }
+
+    .project__desc {
+      margin-top: 1rem;
+      // width: 80%;
+      // margin-left: 15%;
+
+      p {
+        font-size: 0.9em;
       }
     }
   }

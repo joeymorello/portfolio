@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, navigate, StaticQuery } from 'gatsby'
-import './projects.css'
+import './project-feed.scss'
 
 export default () => (
 
@@ -40,13 +40,11 @@ export default () => (
          </div>
             <div className='feed'>
                 {data.allContentfulProject.edges.map(edge => (
-                <div data={'web'} key={edge.node.id} className='project__item' onClick={() => navigate(`/project/${edge.node.slug}`)} >
-                  <p className='card__category'>{edge.node.projectType}</p>
+                <div key={edge.node.id} className='project__item' onClick={() => navigate(`/project/${edge.node.slug}`)} >
+                  <p className='project__category'>{edge.node.projectType}</p>
                   <h2 className='projects__title'>{edge.node.title}</h2>
                   {/* <div className='side__scroll'> */}
-                    <div className='project__keywords--container'>
-                      <p className='project__keywords'>{edge.node.projectKeywords}</p>
-                    </div>
+                    <p className='project__keywords'>{edge.node.projectKeywords}</p>
                   {/* </div> */}
                 </div>
                 ))}

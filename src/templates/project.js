@@ -23,11 +23,11 @@ const ProjectTemplate = (props) => {
                     {__html: `${props.data.contentfulProject.projectDescription.childMarkdownRemark.html}`}
                 } />
               </div>
-              <a href="#project__wrapper">
+              {/* <a href="#project__wrapper">
                 <div className="intro-scroll--projects">
                     <i></i><i></i><i></i>
                 </div>
-              </a>
+              </a> */}
             </div>
             <HomeReturn />
         </div>
