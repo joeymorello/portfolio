@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, navigate, StaticQuery } from 'gatsby'
-import './footer.css'
+import './contact.css'
 
 export default () => (
    <StaticQuery
@@ -18,7 +18,7 @@ export default () => (
     }
 `}
      render={data => (
-       <footer id="contact">
+       <section id="contact">
          {data.allContentfulContactSection.edges.map(edge => (
              <div key={edge.node.id}>
              <h1 className='header__title'>{edge.node.title}</h1>
@@ -29,7 +29,7 @@ export default () => (
               </div>
              </div>
          ))}
-       </footer>
+       </section>
      )}
    />
  )

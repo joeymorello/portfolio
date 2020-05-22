@@ -11,6 +11,9 @@ font-family: 'Anonymous Pro', monospace; */
   /* --primary-color: #7a6161; */
   /* --primary-color: #a38ca1; purp */
   --primary-color: hsl(0, 0%, 31%);
+  --primary-color--shadow: hsl(0, 0%, 26%);
+  --accent-color: #db6a48;
+  --accent-color--shadow: hsl(13.9, 67.1%, 37.1%);
 
   /* TYPOGRAPHY */
   /* COLOR */
@@ -27,10 +30,12 @@ font-family: 'Anonymous Pro', monospace; */
     --font-content--large: 1.25em;
     --font-content--small: 1em;
     --font-content--tiny: 0.75em; */
+  --font-title--ex-large: 7em;
   --font-title--large: 6em;
   --font-title--medium: 4em;
   --font-title--small: 1.5em;
 
+  --font-content--ex-large: 1.5em;
   --font-content--large: 1.25em;
   --font-content--small: 1em;
   --font-content--tiny: 0.75em;

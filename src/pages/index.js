@@ -1,18 +1,12 @@
 import React from "react"
 import Intro from "../components/intro/index"
-import Projects from "../components/projects/index"
+import Projects from "../components/projectFeed/index"
 import CV from "../components/cv/index"
-import Contact from "../components/footer/index"
+import Contact from "../components/contact/index"
 import Nav from "../components/nav"
 import Accounts from "../components/accounts"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-//==========================================================================================
-//
-//CHANGE CONTACT TO A SECTION AND ADD FOOTER COMPONENT TO RENDER TO EVERYPAGE - ADD COPYRIGHT
-//
-//==========================================================================================
 
 const IndexPage = () => (
   <Layout>

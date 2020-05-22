@@ -39,26 +39,15 @@ export default () => (
           <h1 className='header__title'>Projects</h1>
          </div>
             <div className='feed'>
-            {/* <ul>
-              <li  className={data='web' ? 'nav__item--link active' : 'nav__item--link'} onClick={ } >web</li>
-              <li>3d</li>            
-            </ul> */}
                 {data.allContentfulProject.edges.map(edge => (
                 <div data={'web'} key={edge.node.id} className='project__item' onClick={() => navigate(`/project/${edge.node.slug}`)} >
-       
                   <p className='card__category'>{edge.node.projectType}</p>
                   <h2 className='projects__title'>{edge.node.title}</h2>
-                  <div className='side__scroll'>
-                    <p className='project__keywords'>{edge.node.projectKeywords}</p>
-                  </div>
-                  
-                    {/* {edge.node.category.map(title => (
-                      <p className='card__category'>{title}</p>
-                    ))} */}
-
-                        {/* {edge.node.categories.map(category => (
-                            <p className='card__category'>{category.title}</p>
-                        ))} */}
+                  {/* <div className='side__scroll'> */}
+                    <div className='project__keywords--container'>
+                      <p className='project__keywords'>{edge.node.projectKeywords}</p>
+                    </div>
+                  {/* </div> */}
                 </div>
                 ))}
             </div>
@@ -66,12 +55,3 @@ export default () => (
      )}
    />
  )
-
-
-//  .visuallyhidden { 
-//   position: absolute; 
-//   overflow: hidden; 
-//   clip: rect(0 0 0 0); 
-//   height: 1px; width: 1px; 
-//   margin: -1px; padding: 0; border: 0; 
-// }
