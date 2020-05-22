@@ -47,29 +47,23 @@
       opacity: 0.5;
     }
   }
-
-  @media screen and (max-width: 1300px) {
-    .projects__title {
-      color: red;
-      &:hover {
-        letter-spacing: 0;
-      }
-    }
-  }
 }
 
-// @media screen and (max-width: 1300px) {
-//   .projects__title {
-//     color: red;
-//     &:hover {
-//       letter-spacing: 0;
-//     }
-//   }
-// }
+//===============================================
+//SCOP ISSUE WITH MEDIA QUERY
+//===============================================
 
 @media screen and (max-width: 1000px) {
   .feed {
     width: 90%;
+
+    .projects__title {
+      font-size: 2em !important;
+
+      &:hover {
+        letter-spacing: 0em !important;
+      }
+    }
   }
 }
 
