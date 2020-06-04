@@ -36,7 +36,7 @@ export default () => (
      render={data => (
          <section id="projects">
          <div className='header__container'>
-          <h1 className='header__title'>Projects</h1>
+          {/* <h1 className='header__title'>Projects</h1> */}
          </div>
             <div className='feed'>
                 {data.allContentfulProject.edges.map(edge => (

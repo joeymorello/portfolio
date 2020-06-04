@@ -55,10 +55,11 @@
 
 @media screen and (max-width: 1000px) {
   .feed {
-    width: 90vw;
-    margin: 0 1em;
+    width: 100% !important;
+    margin: 0 !important;
 
     .projects__title {
+      margin: 0 !important;
       font-size: 3em !important;
 
       &:hover {
@@ -78,7 +79,7 @@
 @media screen and (max-width: 500px) {
   .feed {
     width: 100%;
-
+    margin: 0 !important;
     .projects__title {
       font-size: 2em !important;
     }
