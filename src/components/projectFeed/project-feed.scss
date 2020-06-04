@@ -82,10 +82,14 @@
     margin: 0 !important;
 
     .project__item {
-      margin: 0 0 3rem 1rem;
+      margin: 0 0 4rem 1rem;
 
       &:nth-child(odd) {
-        margin: 0 1rem 3rem 0;
+        margin: 0 1rem 4rem 0;
+      }
+
+      .project__category {
+        font-size: var(--font-content--tiny);
       }
 
       .projects__title {
@@ -93,7 +97,7 @@
       }
 
       .project__keywords {
-        font-size: var(--font-content--small) !important;
+        font-size: var(--font-content--tiny) !important;
       }
     }
   }
