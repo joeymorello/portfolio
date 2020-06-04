@@ -80,12 +80,21 @@
   .feed {
     width: 100%;
     margin: 0 !important;
-    .projects__title {
-      font-size: 2em !important;
-    }
 
-    .project__keywords {
-      font-size: var(--font-content--small) !important;
+    .project__item {
+      margin: 0 0 3rem 1rem;
+
+      &:nth-child(odd) {
+        margin: 0 1rem 3rem 0;
+      }
+
+      .projects__title {
+        font-size: 2em !important;
+      }
+
+      .project__keywords {
+        font-size: var(--font-content--small) !important;
+      }
     }
   }
 }
