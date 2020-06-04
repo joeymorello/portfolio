@@ -6,6 +6,8 @@ font-family: 'Cutive Mono', monospace;
 font-family: 'Anonymous Pro', monospace; */
 
 :root {
+  --intro-scroll-size: 2em;
+
   /* COLOR */
   /* --primary-color: #B32B48; */
   /* --primary-color: #7a6161; */

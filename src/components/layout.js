@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import 'normalize.css';
 
-import "./layout.css"
+import "./layout.scss"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require

@@ -1,7 +1,3 @@
-:root {
-  --intro-scroll-size: 2em;
-}
-
 #intro {
   height: 100vh;
   display: flex;
@@ -82,7 +78,7 @@
 
 @media screen and (max-width: 850px) {
   .intro__name {
-    font-size: var(--font-title--medium);
+    font-size: var(--font-title--medium) !important;
     line-height: 1.5;
   }
 
@@ -130,7 +126,7 @@
 
 @media screen and (max-width: 500px) {
   .intro__name {
-    font-size: 2em;
+    font-size: 2.5em !important;
   }
 
   .intro__description {

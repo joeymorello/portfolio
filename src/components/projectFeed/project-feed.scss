@@ -55,14 +55,19 @@
 
 @media screen and (max-width: 1000px) {
   .feed {
-    width: 90%;
+    width: 90vw;
+    margin: 0 1em;
 
     .projects__title {
-      font-size: 2em !important;
+      font-size: 3em !important;
 
       &:hover {
         letter-spacing: 0em !important;
       }
+    }
+
+    .project__keywords {
+      font-size: var(--font-content--large) !important;
     }
   }
 }
@@ -71,6 +76,17 @@
 }
 
 @media screen and (max-width: 500px) {
+  .feed {
+    width: 100%;
+
+    .projects__title {
+      font-size: 2em !important;
+    }
+
+    .project__keywords {
+      font-size: var(--font-content--small) !important;
+    }
+  }
 }
 
 // @media screen and (max-width: 1200px) {
