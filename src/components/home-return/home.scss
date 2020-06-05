@@ -1,7 +1,7 @@
 .home__container {
   position: fixed;
-  bottom: 2rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
 
   .home__link {
     font-size: var(--font-title--small);
@@ -9,6 +9,16 @@
     color: var(--accent-color);
     text-shadow: 0px 1px 1.5px var(--accent-color--shadow);
     padding: 0 0.25rem;
+
+    span {
+      transition: 0.5s var(--smooth-snap);
+      &:hover {
+        letter-spacing: 0.125em;
+      }
+    }
+  }
+  .home__link--next {
+    font-size: var(--font-content--small);
   }
 }
 

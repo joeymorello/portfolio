@@ -1,14 +1,20 @@
 #contact {
   height: 100vh;
   margin: 0 auto;
+  position: relative;
 
   .contact__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // vertical-align: middle;
 
-    padding-top: 8em;
+    // padding-top: 8em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .email a {
@@ -40,10 +46,13 @@
 
   @media screen and (max-width: 800px) {
     .email a {
-      font-size: var(--font-title--small);
+      font-size: 2em;
     }
   }
 
   @media screen and (max-width: 500px) {
+    .email a {
+      font-size: var(--font-title--small);
+    }
   }
 }

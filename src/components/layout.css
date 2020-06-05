@@ -18,10 +18,9 @@ body {
 }
 
 section {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3em;
+  /* height: auto;
+  width: 100%; */
+  /* margin: 0 auto 3em auto; */
 }
 
 a {

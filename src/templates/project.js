@@ -17,12 +17,13 @@ const ProjectTemplate = (props) => {
         <div className='project__header'>
             {/* <div className='project__hero' style={{backgroundImage:  `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div> */}
             <div className='project__hero'>
-              <h1 className='project__title'>{props.data.contentfulProject.pageTitle}</h1>
               <div className='project__desc'>
+              
                 <div dangerouslySetInnerHTML={
                     {__html: `${props.data.contentfulProject.projectDescription.childMarkdownRemark.html}`}
                 } />
               </div>
+              <h1 className='project__title'>{props.data.contentfulProject.pageTitle}</h1>
               {/* <a href="#project__wrapper">
                 <div className="intro-scroll--projects">
                     <i></i><i></i><i></i>

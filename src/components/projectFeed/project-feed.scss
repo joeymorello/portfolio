@@ -32,11 +32,6 @@
       text-transform: uppercase;
       color: var(--primary-color);
       transition: 0.8s var(--smooth-snap);
-
-      &:hover {
-        letter-spacing: 0.125em;
-        color: var(--accent-color);
-      }
     }
 
     .project__keywords {
@@ -45,30 +40,49 @@
       color: var(--primary-color);
       font-size: var(--font-title--small);
       opacity: 0.5;
+      transition: 0.6s var(--smooth-snap);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &:hover {
+      .projects__title {
+        letter-spacing: 0.125em;
+        color: var(--accent-color);
+      }
+
+      .project__keywords {
+        letter-spacing: -0.0625em;
+      }
     }
   }
 }
 
-//===============================================
-//SCOP ISSUE WITH MEDIA QUERY
-//===============================================
-
 @media screen and (max-width: 1000px) {
   .feed {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
 
-    .projects__title {
-      margin: 0 !important;
-      font-size: 3em !important;
+    .project__item {
+      .projects__title {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      .project__keywords {
+        font-size: var(--font-content--large);
+        white-space: normal;
+      }
 
       &:hover {
-        letter-spacing: 0em !important;
-      }
-    }
+        .projects__title {
+          letter-spacing: 0;
+        }
 
-    .project__keywords {
-      font-size: var(--font-content--large) !important;
+        .project__keywords {
+          letter-spacing: 0;
+        }
+      }
     }
   }
 }
