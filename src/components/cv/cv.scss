@@ -5,6 +5,12 @@
     font-family: var(--primary-text);
     color: var(--primary-color);
     padding: 3rem 0 9rem 0;
+
+    a {
+      &:visited {
+        color: var(--primary-color);
+      }
+    }
   }
 
   .cv__wrapper {
