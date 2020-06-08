@@ -33,10 +33,10 @@ export default () => (
                       <div dangerouslySetInnerHTML={
                           {__html: `${edge.node.cvContent.childMarkdownRemark.html}`}
                         } />
-                      </div>
+                    </div>
                    </div>
                   <div className="resume__download">
-                    <a href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank" rel="noopener noreferrer">{edge.node.download}</a>
+                    <a className="link--box-style" href="https://joeymorello.com/assets/resume_morello.pdf" target="_blank" rel="noopener noreferrer">{edge.node.download}</a>
                   </div>
              </div>
          ))}
