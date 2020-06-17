@@ -8,3 +8,16 @@
     margin: 1rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .image-gallery {
+    .image-gallery--item {
+      margin: 0;
+
+      img {
+        width: 300px !important;
+        height: auto !important;
+      }
+    }
+  }
+}

@@ -16,6 +16,9 @@ const SceneShop = () => {
                 nodes {
                     id
                     childImageSharp {
+                        fluid(maxWidth: 600) {
+                            ...GatsbyImageSharpFluid 
+                          }
                         fixed(width: 600) {
                             ...GatsbyImageSharpFixed
                         }
@@ -40,7 +43,8 @@ const SceneShop = () => {
 
         <div className="image-gallery">
             {data.images.nodes.map(image => (
-                <Img className="image-gallery--item" key={image.id} fixed={image.childImageSharp.fixed} />
+                <Img className="image-gallery--item" key={image.id} fixed={image.childImageSharp.fixed} 
+                alt="Picture of a stage set." />
             ))}
         </div>
     </Layout>
