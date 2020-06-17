@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import ProjectFooter from '../components/projectFooter';
 import SEO from '../components/seo';
 import HomeReturn from '../components/home-return';
-import './project.css';
+// import './project.css';
 import './project.scss';
 
 const ProjectTemplate = (props) => {
@@ -17,18 +17,12 @@ const ProjectTemplate = (props) => {
         <div className='project__header'>
             {/* <div className='project__hero' style={{backgroundImage:  `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div> */}
             <div className='project__hero'>
-              <div className='project__desc'>
-              
+              <div className='project__desc'>            
                 <div dangerouslySetInnerHTML={
                     {__html: `${props.data.contentfulProject.projectDescription.childMarkdownRemark.html}`}
                 } />
               </div>
               <h1 className='project__title'>{props.data.contentfulProject.pageTitle}</h1>
-              {/* <a href="#project__wrapper">
-                <div className="intro-scroll--projects">
-                    <i></i><i></i><i></i>
-                </div>
-              </a> */}
             </div>
             <HomeReturn />
         </div>
