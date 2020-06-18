@@ -48,6 +48,12 @@ export default () => (
                   {/* </div> */}
                 </div>
                 ))}
+
+                <div className='project__item' onClick={() => navigate(`/`)} >
+                  <p className='project__category'>web</p>
+                  <h2 className='projects__title'>My Portfolio</h2>
+                  <p className='project__keywords'>gatsbyJS | SASS | graphQL | headless CMS | contentful | netlify </p>
+                </div>
             </div>
         </section>
      )}
