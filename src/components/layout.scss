@@ -23,6 +23,13 @@ section {
   margin-bottom: 3em;
 }
 
+footer {
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--primary-color);
+  font-family: var(--secondary-text);
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);

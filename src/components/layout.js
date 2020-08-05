@@ -24,6 +24,11 @@ const Layout = ({ children }) => {
   return (
     <>
     <main>{children}</main>
+    <footer>
+          © {new Date().getFullYear()} | joey morello
+          {``}
+          {/* <a href="https://www.gatsbyjs.org">joey</a> */}
+    </footer>
     </>
   )
 }
