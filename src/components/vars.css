@@ -14,7 +14,9 @@ font-family: 'Anonymous Pro', monospace; */
   /* --primary-color: #a38ca1; purp */
   --primary-color: hsl(0, 0%, 31%);
   --primary-color--shadow: hsl(0, 0%, 26%);
-  --accent-color: #db6a48;
+  /* --accent-color: #db6a48; */
+  /* --accent-color: #ff6536; */
+  --accent-color: #ff9980;
   --accent-color--shadow: hsl(13.9, 67.1%, 37.1%);
 
   /* TYPOGRAPHY */
