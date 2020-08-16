@@ -1,23 +1,10 @@
 .image-gallery {
-  width: 100%;
+  max-width: 960px;
   height: auto;
   text-align: center;
-  margin-top: 6rem;
+  margin: 6rem auto 0 auto;
 
   .image-gallery--item {
     margin: 1rem;
   }
 }
-
-// @media screen and (max-width: 500px) {
-//   .image-gallery {
-//     .image-gallery--item {
-//       margin: 0;
-
-//       img {
-//         width: 300px !important;
-//         height: auto !important;
-//       }
-//     }
-//   }
-// }
