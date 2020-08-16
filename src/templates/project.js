@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import ProjectFooter from '../components/projectFooter';
 import SEO from '../components/seo';
 import HomeReturn from '../components/home-return';
-// import './project.css';
 import './project.scss';
 
 const ProjectTemplate = (props) => {
