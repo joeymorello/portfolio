@@ -2,6 +2,7 @@
   position: fixed;
   top: 2rem;
   left: 2rem;
+  z-index: 1;
 
   .home__link {
     font-size: var(--font-title--small);
@@ -39,8 +40,8 @@
   .home__container {
     position: fixed;
     bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    // transform: translateX(-50%);
 
     .home__link {
       font-size: var(--font-content--small);
