@@ -11,11 +11,7 @@ const ProjectTemplate = (props) => {
     return (
         <Layout>
         <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
-        {/* <ProjectFooter /> */}
-
-
         <div className='project__header'>
-            {/* <div className='project__hero' style={{backgroundImage:  `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div> */}
             <div className='project__hero'>
               <div className='project__desc'>            
                 <div dangerouslySetInnerHTML={
