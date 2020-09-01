@@ -24,7 +24,7 @@ export default () => (
              <h1 className='header__title'>{edge.node.title}</h1>
               <div className="contact__container">  
                   <div className="email">        
-                    <a className="link--box-style" href="mailto:joeymorello.one@gmail.com">{edge.node.emailLink}</a>
+                    <a className="link--box-style" href="mailto:joeymorello.work@gmail.com">{edge.node.emailLink}</a>
                   </div>
               </div>
              </div>
