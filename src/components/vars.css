@@ -12,8 +12,13 @@ font-family: 'Anonymous Pro', monospace; */
   /* --primary-color: #B32B48; */
   /* --primary-color: #7a6161; */
   /* --primary-color: #a38ca1; purp */
-  --primary-color: hsl(0, 0%, 31%);
-  --primary-color--shadow: hsl(0, 0%, 26%);
+
+  /* --primary-color: hsl(0, 0%, 31%); */
+  /* --primary-color--shadow: hsl(0, 0%, 26%); THIS ONE */
+  --rotation-color-primary: hsl(157, 39%, 70%);
+  --rotation-color-primary--dark: hsl(157, 39%, 50%);
+  --primary-color: hsl(157, 39%, 20%);
+
   /* --accent-color: #db6a48; */
   /* --accent-color: #ff6536; */
   --accent-color: #ff9980;
@@ -61,11 +66,8 @@ font-family: 'Anonymous Pro', monospace; */
   /* --rotation-color-primary--dark: hsl(50, 100%, 45%); */
   --rotation-color-secondary--dark: hsl(180, 100%, 45%);
 
-  /* --rotation-color-primary: hsl(297, 6%, 20%);
-  --rotation-color-primary--dark: hsl(297, 6%, 17%); */
-
-  --rotation-color-primary: hsl(0, 0%, 61%);
-  --rotation-color-primary--dark: hsl(0, 0%, 56%);
+  /* --rotation-color-primary: hsl(0, 0%, 61%);
+  --rotation-color-primary--dark: hsl(0, 0%, 56%); */
 
   /* EASING */
   --smooth-snap: cubic-bezier(0.75, 0, 0.175, 1);
