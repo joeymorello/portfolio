@@ -1,18 +1,17 @@
+@import "../components/vars.scss";
+
 .project__hero {
-  background-color: var(--primary-color);
-  // background-color: red;
+  background-color: $c-primary--dark;
   height: auto;
   width: 100%;
 
   .project__title {
     font-family: var(--primary-text);
     font-size: var(--font-title--ex-large);
-    color: var(--primary-color);
+    color: $c-primary--dark;
     text-transform: uppercase;
-    text-shadow: -1px -1px 0 var(--rotation-color-primary),
-      1px -1px 0 var(--rotation-color-primary),
-      -1px 1px 0 var(--rotation-color-primary),
-      1px 1px 0 var(--rotation-color-primary);
+    text-shadow: -1px -1px 0 $c-primary, 1px -1px 0 $c-primary,
+      -1px 1px 0 $c-primary, 1px 1px 0 $c-primary;
     overflow: hidden;
     overflow-wrap: break-word;
     margin: 0;
@@ -31,22 +30,23 @@
     p {
       font-size: var(--font-content--large);
       font-family: var(--secondary-text);
-      color: var(--rotation-color-primary);
+      color: $c-primary;
     }
   }
 
   a {
     text-decoration: none;
-    color: var(--rotation-color-primary);
-    text-decoration: underline;
+    color: $c-primary;
+    // text-decoration: underline;
     transition: box-shadow 0.75s var(--smooth-snap);
+    border-bottom: 2px solid $c-accent;
 
     &:visited {
-      color: var(--rotation-color-primary);
+      color: $c-primary;
     }
 
     &:hover {
-      box-shadow: inset 0 -2.5rem 0 0 var(--accent-color);
+      box-shadow: inset 0 -2.5rem 0 0 $c-accent;
     }
   }
 
@@ -80,7 +80,8 @@
 
 #project__wrapper {
   width: 100%;
-  background-color: var(--rotation-color-primary);
+  background-color: $c-primary;
+  padding-top: 3em;
 
   .project__content {
     max-width: 960px;
@@ -115,13 +116,13 @@
     h1 {
       font-family: var(--primary-text);
       font-size: var(--font-title--medium);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       margin: 20px 0;
     }
 
     h2 {
       font-family: var(--primary-text);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       font-size: 2em;
       margin: 80px 0 40px 0;
     }
@@ -129,26 +130,26 @@
     p {
       font-family: var(--secondary-text);
       font-size: var(--font-content--large);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       line-height: 1.4em;
       margin: 20px 0;
     }
 
     a {
       text-decoration: none;
-      color: var(--primary-color);
+      color: $c-primary--dark;
 
-      box-shadow: inset 0 -0.75rem 0 0 var(--rotation-color-primary--dark);
+      box-shadow: inset 0 -0.75rem 0 0 $c-accent;
       transition: box-shadow 0.75s var(--smooth-snap);
     }
     a.start-offset {
-      box-shadow: inset 0 -2.5rem 0 0 var(--rotation-color-primary--dark);
+      box-shadow: inset 0 -2.5rem 0 0 $c-accent;
     }
     a.start-offset:hover {
-      box-shadow: inset 0 -0.5rem 0 0 var(--accent-color);
+      box-shadow: inset 0 -0.5rem 0 0 $c-accent;
     }
     a:hover {
-      box-shadow: inset 0 -2.5rem 0 0 var(--accent-color);
+      box-shadow: inset 0 -2.5rem 0 0 $c-accent;
     }
 
     .center {

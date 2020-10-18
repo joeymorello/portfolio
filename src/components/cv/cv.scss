@@ -1,14 +1,16 @@
+@import "../vars.scss";
+
 #cv {
   .resume__download {
     text-align: center;
     font-size: var(--font-title--small);
     font-family: var(--primary-text);
-    color: var(--primary-color);
+    color: $c-primary--dark;
     padding: 3rem 0 9rem 0;
 
     a {
       &:visited {
-        color: var(--primary-color);
+        color: $c-primary--dark;
       }
     }
   }
@@ -32,14 +34,14 @@
         font-size: var(--font-title--medium);
         font-family: var(--primary-text);
         text-transform: uppercase;
-        color: var(--primary-color);
+        color: $c-primary--dark;
       }
 
       /* WORK SECTION */
       .work__item {
         margin: 2em 0;
         font-family: var(--secondary-text);
-        color: var(--primary-color);
+        color: $c-primary--dark;
 
         h3 {
           text-decoration: none;
@@ -68,7 +70,7 @@
       .education__item {
         margin: 2em 0;
         font-family: var(--secondary-text);
-        color: var(--primary-color);
+        color: $c-primary--dark;
 
         .education__title {
           margin: 0;
@@ -102,7 +104,7 @@
       /* SKILLS SECTION  */
       .skills-wrapper {
         font-family: var(--secondary-text);
-        color: var(--primary-color);
+        color: $c-primary--dark;
         margin-left: 2em;
 
         .row {

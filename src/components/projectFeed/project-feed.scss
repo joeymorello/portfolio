@@ -1,3 +1,5 @@
+@import "../vars.scss";
+
 .feed {
   display: flex;
   flex-direction: column;
@@ -11,33 +13,33 @@
     height: auto;
     width: auto;
     text-align: left;
-    border-left: 0.125em solid var(--primary-color);
+    border-left: 0.125em solid $c-primary--dark;
 
     &:nth-child(odd) {
       text-align: right;
-      border-left: 0 solid var(--primary-color);
-      border-right: 0.125em solid var(--primary-color);
+      border-left: 0 solid $c-primary--dark;
+      border-right: 0.125em solid $c-primary--dark;
     }
 
     .project__category {
       font-size: var(--font-content--small);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       text-transform: lowercase;
       opacity: 0.5;
     }
 
     .projects__title {
-      font-size: var(--font-title--medium);
+      font-size: 3.75em;
       font-family: var(--primary-text);
       text-transform: uppercase;
-      color: var(--primary-color);
+      color: $c-primary--dark;
       transition: 0.8s var(--smooth-snap);
     }
 
     .project__keywords {
       font-family: var(--secondary-text);
       text-transform: uppercase;
-      color: var(--primary-color);
+      color: $c-primary--dark;
       font-size: var(--font-title--small);
       opacity: 0.5;
       transition: 0.6s var(--smooth-snap);
@@ -48,7 +50,7 @@
     &:hover {
       .projects__title {
         letter-spacing: 0.125em;
-        color: var(--accent-color);
+        color: $c-accent;
       }
 
       .project__keywords {

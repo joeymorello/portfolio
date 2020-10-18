@@ -1,0 +1,11 @@
+// COLOR
+// $c-primary: #006da8;
+// $c-primary--dark: darken($c-primary, 20%);
+// $c-primary--shadow: darken($c-primary, 10%);
+// $c-primary--highlight: darken($c-primary, 5%);
+// $c-secondary: #ff28a9;
+// $c-accent: #febb9e;
+
+$c-primary: #222;
+$c-primary--dark: rgb(240, 212, 122);
+$c-accent: darken($c-primary--dark, 40%);

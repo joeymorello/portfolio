@@ -1,16 +1,11 @@
+@import "../vars.scss";
+
 #contact {
   height: 100vh;
   margin: 0 auto;
   position: relative;
 
   .contact__container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // vertical-align: middle;
-
-    // padding-top: 8em;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +16,7 @@
     font-size: var(--font-title--medium);
     font-family: var(--primary-text);
     text-decoration: none;
-    color: var(--primary-color);
+    color: $c-primary--dark;
   }
 
   @media screen and (max-width: 1000px) {

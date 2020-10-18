@@ -1,15 +1,17 @@
+@import "../vars.scss";
+
 #intro {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 
   .header__content {
     text-align: center;
     height: auto;
     width: auto;
     line-height: 2.5em;
-    text-shadow: 1px 1px 4px var(--rotation-color-primary--dark);
 
     .intro__name {
       margin: 0;
@@ -17,31 +19,31 @@
       line-height: 1;
       font-family: var(--primary-text);
       text-transform: uppercase;
-      color: var(--primary-color);
+      color: $c-primary--dark;
     }
 
     .intro__description {
       font-family: var(--secondary-text);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       font-weight: 400;
     }
 
     .intro__location {
       font-family: var(--secondary-text);
-      color: var(--primary-color);
+      color: $c-primary--dark;
       font-weight: 400;
     }
 
     .intro-scroll {
       display: flex;
-      align-content: flex-start;
+      align-content: center;
       cursor: pointer;
       height: var(--intro-scroll-size);
       width: var(--intro-scroll-size);
       margin: auto;
 
       i {
-        background-color: var(--primary-color);
+        background-color: $c-primary--dark;
         border-radius: 0 0 5px 5px;
         content: "";
         display: inline-flex;
@@ -92,7 +94,7 @@
   }
 
   .intro-scroll i {
-    background-color: var(--primary-color);
+    background-color: $c-primary--dark;
     border-radius: 0 0 5px 5px;
     content: "";
     display: inline-flex;

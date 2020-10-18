@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { useSpring, animated } from "react-spring"
 import 'normalize.css';
 
 import "./layout.scss"
@@ -21,9 +22,11 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const fade = useSpring({ from: { opacity: 0 }, opacity: 1, config: { duration: 500 } });
+
   return (
     <>
-    <main>{children}</main>
+    <animated.main style={fade}>{children}</animated.main>
     <footer>
           © {new Date().getFullYear()} | joey morello
           {``}
