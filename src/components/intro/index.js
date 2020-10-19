@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring"
 import './intro.scss'
 
 export default () => {
-  const slide = useSpring({ from: { transform: 'translate3d(0, 100px, 0)' }, transform: 'translate3d(0, 0, 0)', config: { tension: 100, friction: 15 } });
+  const spacing = useSpring({ from: { letterSpacing: '1.125em' }, letterSpacing: '0em', config: { tension: 100, friction: 15 } });
 
   return (
    <StaticQuery
@@ -26,7 +26,7 @@ export default () => {
     }
 `}
      render={data => (
-        <animated.section id="intro" style={slide}>
+        <animated.section id="intro" style={spacing}>
           {data.allContentfulIntroSection.edges.map(edge => (
               <div key={edge.node.id} className='header__content'>
                     <h1 className="intro__name">{edge.node.name}</h1>
