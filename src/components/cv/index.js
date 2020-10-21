@@ -6,22 +6,28 @@ export default () => (
    <StaticQuery
      query={graphql` 
      query CVQuery {
-    allContentfulCvSection {
-      edges {
-        node {
+  allContentfulCvSection {
+    edges {
+      node {
+        id
+        title
+        download
+        resumeFile {
           id
-          title
-          download
-          cvContent {
-            childMarkdownRemark {
-              html
-            }
+          file {
+            url
           }
-          id
         }
+        cvContent {
+          childMarkdownRemark {
+            html
+          }
+        }
+        id
       }
     }
   }
+}
 `}
      render={data => (
        <section id="cv">
@@ -36,7 +42,7 @@ export default () => (
                     </div>
                    </div>
                   <div className="resume__download">
-                    <a className="link--box-style" href="http://assets.ctfassets.net/uhm8x1oz427f/5Cf3ULS1tAB6wbtmP0siQW/c95b89f42795376f55c99bd14613302f/resume-morello--general.pdf" target="_blank" rel="noopener noreferrer">{edge.node.download}</a>
+                    <a className="link--box-style" href={edge.node.resumeFile.file.url} target="_blank" rel="noopener noreferrer">{edge.node.download}</a>
                   </div>
              </div>
          ))}
